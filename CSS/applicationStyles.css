@@ -1,0 +1,25 @@
+body{
+    color: #5DA3EA;
+   
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    color:aliceblue;
+}
+table{
+    background-color: #E1C03D;
+}
+form{
+    background-color: #224059;
+    width: 50%;
+    padding: 30px;
+}
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+#application{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

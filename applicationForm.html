@@ -7,6 +7,7 @@
     <title>JC Men's Soccer</title>
     <link rel="icon" type="image/x-icon" href="Icon/favicon.ico">
     <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/applicationStyles.css">
 </head>
 <body>
     <header>
@@ -18,9 +19,65 @@
         </div>
         </nav>
     </header>
+    <div id="hero">
+        <h1>Future Eagle Application</h1>
+    </div>
+    <div id="application">
+    <form>
+        <h2>Player Information</h2>
+        <table>
+           <tr>
+            <td>First Name:</td>
+            <td><input type="text" name="first_name"></td>
+           </tr>
+           <tr>
+            <td>Last Name:</td>
+            <td><input type="text" name="last_name"></td>
+           </tr>
+           <tr>
+            <td>Phone Number:</td>
+            <td><input type="text" name="phone_number"></td>
+           </tr>
+           <tr>
+            <td>Email:</td>
+            <td><input type="text" name="email"></td>
+           </tr>
+           <tr>
+            <td>Address:</td>
+            <td><input type="text" name="address"></td>
+           </tr>
+        </table>
 
+        <h2>Postion</h2>
+        <input type="radio" name="postions" value="forward"><label for="forward">Forward</label>
+        <br/>
+        <input type="radio" name="postions" value="midfielder"><label for="midfielder">Midfielder</label>
+        <br/>
+        <input type="radio" name="postions" value="defender"><label for="defender">Defender</label>
+        <br/>
 
+        <h2>Dominant Foot</h2>
+        <input type="checkbox" value="right"><label>Right Foot</label>
+        <br/>
+        <input type="checkbox" value="left"><label>Left Foot</label>
+        <br/>
+       
+        <h2>Graduation Year</h2>
+        <select name="graduation_year">
+            <option vaule="2026">2026</option>
+            <option value="2027">2027</option>
+            <option value="2028">2028</option>
+        </select>
 
+        <h2>Comments</h2>
+        <textarea rows="4" cols="40">Describe yourself as a player.</textarea>
+
+        <br/>
+
+        <button type="submit">Submit </button>
+        <button type="reset">Reset </button>
+    </form>
+    </div>
     <script src="js/script.js"></script>
 </body>
 <footer>
