@@ -1,0 +1,14 @@
+#playerBio {
+    background-color: white;
+    display: flex;
+    overflow: auto;
+    justify-content: center;
+    align-items: center;
+}
+#player {
+   margin: 50px;
+   width: 100%;
+   align-items: center;
+   justify-content: center;
+   max-width: fit-content;
+}
