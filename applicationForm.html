@@ -8,13 +8,14 @@
     <link rel="icon" type="image/x-icon" href="Icon/favicon.ico">
     <link rel="stylesheet" href="CSS/styles.css">
     <link rel="stylesheet" href="CSS/applicationStyles.css">
+    <script src="js/script.js"></script>
 </head>
 <body>
     <header>
         <nav>
             <div class="nav-links">
-                <a href="index.html" class="active">Home</a> |
-                <a href="roster.html" class="active">Roster</a> |
+                <a href="index.html" class="active">Home</a>
+                <a href="roster.html" class="active">Roster</a>
                 <a href="applicationForm.html" class="active">Application</a>
         </div>
         </nav>
@@ -23,7 +24,7 @@
         <h1>Future Eagle Application</h1>
     </div>
     <div id="application">
-    <form>
+    <form id="form" onsubmit="submitForm()" onreset="resetForm()">
         <h2>Player Information</h2>
         <table>
            <tr>
@@ -57,9 +58,10 @@
         <br/>
 
         <h2>Dominant Foot</h2>
-        <input type="checkbox" value="right"><label>Right Foot</label>
+        <input id="check1" type="checkbox" value="right" onchange="checkAmbidextrous()"><label>Right Foot</label>
         <br/>
-        <input type="checkbox" value="left"><label>Left Foot</label>
+        <input id="check2" type="checkbox" value="left" onchange="checkAmbidextrous()"><label>Left Foot</label>
+        <span id="ambidextrous"></span>
         <br/>
        
         <h2>Graduation Year</h2>
@@ -78,7 +80,6 @@
         <button type="reset">Reset </button>
     </form>
     </div>
-    <script src="js/script.js"></script>
 </body>
 <footer>
     <div id="socials">
